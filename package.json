@@ -1,0 +1,24 @@
+{
+  "name": "XLDTechnicalExamBackend",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "repository": "https://github.com/nemeCIS6/XLDTechnicalExamBackend",
+  "author": "Francis Gaddi <francisjohngaddi@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/datastore": "^6.0.0",
+    "@types/connect": "^3.4.33",
+    "@types/express": "^4.17.6",
+    "@types/node": "^14.0.13",
+    "@types/validator": "^13.0.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "lodash": "^4.17.15",
+    "typescript": "^3.7.0",
+    "validator": "^13.1.1"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "start": "tsc && node build/index"
+  }
+}
