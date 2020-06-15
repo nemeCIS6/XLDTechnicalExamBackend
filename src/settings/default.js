@@ -2,8 +2,7 @@ import path from "path";
 
 const settings = {
   server: {
-    host: "http://localhost",
-    port: 3001,
+    port: process.env.PORT||8080,
     bodySizeLimit: "3MB",
     allowedOrigins: [
       "*"

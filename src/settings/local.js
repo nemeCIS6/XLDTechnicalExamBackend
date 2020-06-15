@@ -1,8 +1,7 @@
-import path from "path";
+/* import path from "path";
 
 const settings = {
     server: {
-        host: "http://localhost",
         port: 3001,
         bodySizeLimit: "3MB",
         allowedOrigins: [
@@ -19,4 +18,4 @@ const settings = {
     },
     authenticationTokenName: `none`
 };
-module.exports = settings;
+module.exports = settings; */

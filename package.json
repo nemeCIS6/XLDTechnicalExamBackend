@@ -15,10 +15,21 @@
     "express-async-errors": "^3.1.1",
     "lodash": "^4.17.15",
     "typescript": "^3.7.0",
-    "validator": "^13.1.1"
+    "validator": "^13.1.1",
+    "mocha": "^7.0.0",
+    "wait-port": "^0.2.7",
+    "chai": "^4.2.0",
+    "tslint": "^6.0.0"
   },
   "scripts": {
     "tsc": "tsc",
-    "start": "tsc && node build/index"
+    "start": "node build/index",
+    "prepare": "npm run gcp-build",
+    "pretest": "npm run gcp-build",
+    "test": "mocha test/*.test.js --exit",
+    "posttest": "npm run lint",
+    "lint": "tslint -p .",
+    "gcp-build": "tsc -p .",
+    "deploy": "gcloud app deploy"
   }
 }
